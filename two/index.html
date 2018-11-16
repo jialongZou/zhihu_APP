@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    
+	<title>轮播图片</title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+</head>
+<body>
+	<div class="mui-inner-wrap">
+					<header class="mui-bar mui-bar-nav">
+						<a href="#offCanvasSide" class="mui-icon mui-action-menu mui-icon-bars mui-pull-left"></a>
+						<h1 class="mui-title">我的知乎</h1>
+					</header>
+					<div id="offCanvasContentScroll" class="mui-content mui-scroll-wrapper">
+						<div class="mui-scroll">
+							
+							<div id="slider" class="mui-slider">
+								<div class="mui-slider-group mui-slider-loop" id="loop"></div>
+								<div class="mui-slider-indicator" id="indicator"></div>
+							</div>
+	
+							<div class="mui-card" style="margin-bottom: 35px;">
+								<ul class="mui-table-view" id="view"></ul>
+							</div>
+								<div class="mui-slider">
+								  <div class="mui-slider-group mui-slider-loop">
+								    <!--支持循环，需要重复图片节点-->
+								
+								    <div class="mui-slider-item"><a href="#"><img src="img/3.png" /></a></div>
+								    <div class="mui-slider-item"><a href="#"><img src="img/2.jpg" /></a></div>
+								    <div class="mui-slider-item"><a href="#"><img src="img/8.gif" /></a></div>
+								  </div>
+								</div>
+								
+								 <ul class="mui-table-view"> 
+								        <li class="mui-table-view-cell mui-collapse">
+								            <a class="mui-navigate-right" href="#">最新消息</a>
+								            <div class="mui-collapse-content">
+												<p>预览：</p>
+												<p>
+													<a href="new_1.html">震惊！这东西居然可以这么用，大部分人都没想到...</a><img src="img/2.jpg" style="width: 40px;"/>
+													
+												</p>
+								            </div>
+								        </li>
+										
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right" href="#">热门消息</a>
+											<div class="mui-collapse-content">
+												
+											</div>
+										</li>
+										
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right" href="#">主题日报</a>
+											<div class="mui-collapse-content">
+												
+											</div>
+										</li>
+										
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right" href="#">栏目总览</a>
+											<div class="mui-collapse-content">
+												
+											</div>
+										</li>
+										
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right" href="#">软件推广</a>
+											<div class="mui-collapse-content">
+												
+											</div>
+										</li>
+										
+										<li class="mui-table-view-cell mui-collapse">
+											<a class="mui-navigate-right" href="#">软件版本查询</a>
+											<div class="mui-collapse-content">
+												<p>查询当前版本</p>
+											</div>
+										</li>
+								    </ul>
+						</div>
+					</div>
+				</div>
+
+	
+	
+</body>
+<script>
+	//获得slider插件对象
+	var gallery = mui('.mui-slider-item');
+	gallery.slider({
+	  interval:5000//自动轮播周期，若为0则不自动播放，默认为0；
+	});
+
+</script>
+</html>
